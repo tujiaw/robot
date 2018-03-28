@@ -1,0 +1,31 @@
+{
+  "name": "robot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tujiaw/robot.git"
+  },
+  "author": "tujiaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tujiaw/robot/issues"
+  },
+  "homepage": "https://github.com/tujiaw/robot#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "koa": "^2.0.0-alpha.8",
+    "koa-body": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.2.0",
+    "koa-route": "^3.2.0",
+    "koa-static": "^4.0.2",
+    "koa2": "^2.0.0-alpha.7",
+    "koa2-cors": "^2.0.5",
+    "request": "^2.85.0"
+  }
+}
