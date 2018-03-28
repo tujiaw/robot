@@ -11,12 +11,13 @@ function jobbole() {
           const $ = cheerio.load(body);
           $('#archive').children().each(function(i, item) {
             const meta = $(this).find('.post-meta')
+            const title = meta.find('p>a.archive-title')
             const post = {
               tag: meta.find('p>a[rel="category tag"]').text().trim(),
-              title: meta.find('p>a.archive-title').attr('title')
+              title: title.attr('title'),
+              href: title.attr('href')
             }
-
-            if (tag && tag.length && title && title.length) {
+            if (post.tag && post.tag.length && post.title && post.title.length) {
               result.push(post)
             }
           })
