@@ -37,7 +37,7 @@ module.exports = async function() {
             return
         }
 
-        let index = config.index;
+        let index = config.index || 1;
         let result;
         try {
             do {
