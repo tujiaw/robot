@@ -24,6 +24,7 @@ require('./routes')(app, route)
 const PORT = 3000;
 app.listen(PORT, () => {
   console.log('listening on port ' + PORT);
-  robot.start();
 })
+
+robot.start();
 
