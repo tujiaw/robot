@@ -8,5 +8,12 @@ module.exports = {
         } else {
             await new TextJoke(obj).save();
         }
+    },
+    getTextJoke: async function(ctx, next) {
+        const page = ctx.query.page || 1
+        const count = ctx.query.count || 20
+        const list = await TextJoke.get(page, count)
+        ctx.body = { page, count, list }
     }
 }
+
